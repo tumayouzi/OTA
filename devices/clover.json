@@ -1,0 +1,24 @@
+{
+  "response": [
+    {
+        "maintainer": "hota (lindwurm)",
+        "oem": "Xiaomi",
+        "device": "clover",
+        "filename": "Floko-v3.0-clover-20200713_063400-OFFICIAL.zip",
+        "download": "https://sourceforge.net/projects/flokorom/files/v3/clover/Floko-v3.0-clover-20200713_063400-OFFICIAL.zip/download",
+        "timestamp": 1594625708,
+        "md5": "4e70180d9ae7fcd96ea8463b90bee033",
+        "size": 806547847,
+        "version": "3.0",
+        "buildtype": "Official",
+        "forum": "https://forum.xda-developers.com/mi-pad-4/development/rom-flokorom-v3-0-t4081807",
+        "gapps": "https://opengapps.org/",
+        "firmware": "",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "https://dl.twrp.me/clover/",
+        "paypal": "https://www.paypal.me/hotatech",
+        "telegram": "http://bit.ly/hellofloko"
+    }
+  ]
+}
