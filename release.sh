@@ -20,6 +20,8 @@ fi
 
 rsync -avP -e ssh ${file} ${user}@frs.sourceforge.net:/home/frs/project/flokorom/v3/${device}
 
+echo -e "upload is done! generate json..."
+
 datetime=$(date --date="$(date -r $file "+%Y%m%d %H:%M:%S")" +%s)
 id=$(echo $file | md5sum | cut -d' ' -f1)
 size=$(stat -c "%s" $file)
@@ -49,3 +51,5 @@ echo '{
     }
   ]
 }' > devices/${device}.json
+
+echo -e "devices/${device}.json is successfully generated!"
