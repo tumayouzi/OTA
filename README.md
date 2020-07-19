@@ -1,4 +1,4 @@
-# FlokoROM OTA repo
+# FlokoROM OTA repo (and release script)
 
 In order for a device to be officially supported by FlokoROM, OTA information needs to be added.
 
@@ -67,23 +67,24 @@ For following below description, replace `codename` with your device codename.
 After you contacted [hota](https://github.com/FlokoROM/manifesto/wiki/How-to-official), and have the approval, follow the below steps.
 
 1. Fork this repo to your own GitHub
-2. Copy file `createjson.sh` from `initial` folder to FlokoROM source folder and make it executable
+
+2. Copy file `config.sh` from `config.sh.sample`
 
 ```sh
-chmod +x createjson.sh
+cp config.sh.sample config.sh
 ```
 
-3. Open the file in a text editor (vim, nano, any GUI editor) and make changes from where it states *#modify values below*, save the file then run the generation script with below command
+3. Open the file in a text editor (vim, nano, any GUI editor) and make changes from where it states *#modify values below*, save the file then run the upload script with below command
 
 ```sh
-./createjson.sh
+./release.sh <codename> /path/to/rom/like/Floko-v3.0-clover-20200713_063400-OFFICIAL.zip
 ```
 
-4. A file named `codename.json` gets created in main FlokoROM source folder. Copy it to where this repo was cloned.
+4. A file named `codename.json` gets created in `device` folder in this repository.
 5. Create a file named changelog_*codename*.txt based on changelog structure from point 1.2, and add your changelog in it.
 6. Submit a pull request to this repo (this way we validate that you understood the requirements and if all is good you'll be granted direct push access to this repo)
 
-### 3.2 Update build
+### 3.2 Update build (after granted direct push)
 
 1. Clone this repo locally
 
@@ -99,7 +100,7 @@ git fetch --all
 git pull
 ```
 
-3. Copy `codename.json` file from out dir (where your FlokoROM zip is compiled) over to this repo folder (OTA).
+3. Upload file and create new `codename.json` file (simply run `release.sh`)
 4. Make changes to `changelog_codename.txt` and save it.
 5. Now with the files updated, commit your update to this repo.
 

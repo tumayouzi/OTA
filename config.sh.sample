@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# common
+version=3.0
+romtype=Official
+gapps="https://opengapps.org/"
+
+# maintainer info
+user="" # SourceForge username. required
+maintainer="" # required
+paypal="" # optional. ex: https://www.paypal.me/hotatech
+telegram="" # If you are not using Telegram, Discord is ok
+
+# device-specific info (this is example. you should write like this)
+case $1 in
+clover) # codename
+	oem="Xiaomi" # manufacturer
+	devicename="Mi Pad 4" # device name
+	forum="https://forum.xda-developers.com/mi-pad-4/development/rom-flokorom-v3-0-t4081807" # xda link if exist
+	recovery="https://dl.twrp.me/clover/" # recommended recovery
+	# and you can link recommended *modem* and *bootloader* here
+	;;
+esac
