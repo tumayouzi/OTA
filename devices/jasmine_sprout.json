@@ -1,0 +1,24 @@
+{
+  "response": [
+    {
+        "maintainer": "Shouko",
+        "oem": "Xiaomi",
+        "device": "jasmine_sprout",
+        "filename": "Floko-v3.0-jasmine_sprout-20200808-OFFICIAL.zip",
+        "download": "https://sourceforge.net/projects/flokorom/files/v3/jasmine_sprout/Floko-v3.0-jasmine_sprout-20200808-OFFICIAL.zip/download",
+        "timestamp": 1596866592,
+        "md5": "4f09bb16676144f15c8dcfdedc299a6b",
+        "size": 840024829,
+        "version": "3.0",
+        "buildtype": "Official",
+        "forum": "https://forum.xda-developers.com/mi-a2/development/rom-floko-v3-t4060381/",
+        "gapps": "https://opengapps.org/",
+        "firmware": "",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "https://androidfilehost.com/?w=files&flid=294154",
+        "paypal": "",
+        "telegram": "https://t.me/shoukolab"
+    }
+  ]
+}
