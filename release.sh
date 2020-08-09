@@ -18,14 +18,15 @@ else
 	exit 1
 fi
 
-rsync -avP -e ssh ${file} ${user}@frs.sourceforge.net:/home/frs/project/flokorom/v3/${device}
+id=$(echo $file | md5sum | cut -d' ' -f1)
+size=$(stat -c "%s" $file)
+filename=$(basename $file)
+
+rsync -avP -e ssh ${file} ${user}@frs.sourceforge.net:/home/frs/project/flokorom/v3/${device}/${filename}
 
 echo -e "upload is done! generate json..."
 
 datetime=$(date --date="$(date -r $file "+%Y%m%d %H:%M:%S")" +%s)
-id=$(echo $file | md5sum | cut -d' ' -f1)
-size=$(stat -c "%s" $file)
-filename=$(basename $file)
 
 echo '{
   "response": [
