@@ -1,0 +1,24 @@
+{
+  "response": [
+    {
+        "maintainer": "tumayouzi",
+        "oem": "OnePlus",
+        "device": "guacamoleb",
+        "filename": "Floko-v3.0-guacamoleb-20200814_082843-OFFICIAL.zip",
+        "download": "https://sourceforge.net/projects/flokorom/files/v3/guacamoleb/Floko-v3.0-guacamoleb-20200814_082843-OFFICIAL.zip/download",
+        "timestamp": 1597396317,
+        "md5": "05c88174f8b1b9a43e1ecde0f0a70422",
+        "size": 839694010,
+        "version": "3.0",
+        "buildtype": "Official",
+        "forum": "https://forum.xda-developers.com/oneplus-7/development/rom-flokorom-v3-0-t4093225",
+        "gapps": "https://opengapps.org/",
+        "firmware": "",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "https://sourceforge.net/projects/mauronofrio-twrp/",
+        "paypal": "",
+        "telegram": "http://bit.ly/hellofloko"
+    }
+  ]
+}
